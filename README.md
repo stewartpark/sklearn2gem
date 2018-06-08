@@ -5,7 +5,7 @@
 
 ⚡ sklearn2gem ports your scikit-learn model into a fast ruby C binding!
 
-# Getting Started
+# Getting started
 
 Install sklearn2gem using `pip`:
 
