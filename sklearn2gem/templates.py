@@ -2,6 +2,7 @@ from mako.template import Template
 
 EXTCONF_RB = Template("""
 require 'mkmf'
+$CFLAGS += " -std=c99 "
 create_makefile('${gem_name}/${gem_name}')
 """)
 
@@ -17,12 +18,14 @@ void Init_${gem_name}() {
 }
 
 VALUE method_predict(VALUE self, VALUE features) {
+    double arr[${n_features}];
+    long i;
+
     if(RARRAY_LEN(features) != ${n_features}) {
         rb_raise(rb_eRuntimeError, "Size of array must be ${n_features}");
     }
 
-    double arr[${n_features}];
-    for(long i = 0; i < ${n_features}; i++) {
+    for(i = 0; i < ${n_features}; i++) {
         arr[i] = NUM2DBL(rb_ary_entry(features, i));
     }
 

@@ -1,7 +1,8 @@
 # sklearn2gem
 
-[![PyPI version](https://badge.fury.io/py/sklearn2gem.svg)](https://badge.fury.io/py/sklearn2gem)
+[![Build Status](https://travis-ci.org/stewartpark/sklearn2gem.svg?branch=master)](https://travis-ci.org/stewartpark/sklearn2gem)
 [![Requirements Status](https://requires.io/github/stewartpark/sklearn2gem/requirements.svg?branch=master)](https://requires.io/github/stewartpark/sklearn2gem/requirements/?branch=master)
+[![PyPI version](https://badge.fury.io/py/sklearn2gem.svg)](https://badge.fury.io/py/sklearn2gem)
 
 ⚡ sklearn2gem ports your scikit-learn model into a fast ruby C binding!
 
