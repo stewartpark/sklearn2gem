@@ -3,7 +3,7 @@
 [![PyPI version](https://badge.fury.io/py/sklearn2gem.svg)](https://badge.fury.io/py/sklearn2gem)
 [![Requirements Status](https://requires.io/github/stewartpark/sklearn2gem/requirements.svg?branch=master)](https://requires.io/github/stewartpark/sklearn2gem/requirements/?branch=master)
 
-sklearn2gem ports a Pickle'd scikit-learn model into a ruby C extension gem.
+⚡ sklearn2gem ports your scikit-learn model into a fast ruby C binding!
 
 # Getting Started
 
