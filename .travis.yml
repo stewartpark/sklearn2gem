@@ -1,0 +1,15 @@
+language: python
+python:
+  - '3.6.4'
+
+before_install:
+  - pip install -r requirements.txt
+
+script:
+  - python setup.py install
+  - python examples/iris.py
+  - sklearn2gem iris_classifier@0.0.1 model.pkl iris_classifier
+  - cd iris_classifier
+  - gem build iris_classifier.gemspec
+  - CFLAGS=-std=c99 gem install iris_classifier*.gem
+  - ruby -e "require 'iris_classifier'"
